@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Background</title>
+<style>
+div {
+height: 200px;
+margin: 8px 0;
+}
+
+.exe1 {
+background-image: url('https://www.w3schools.com/css/img_bg_eyeicon.png');
+border: 1px solid black;
+}
+
+.exe2 {
+background-image: url('https://www.w3schools.com/css/img_bg_eyeicon.png');
+background-repeat: repeat-x;
+border: 1px solid black;
+}
+
+.exe3 {
+background-image: url('https://www.w3schools.com/css/img_bg_eyeicon.png');
+background-repeat: no-repeat;
+border: 1px solid black;
+}
+
+.exe4 {
+background-image: url('https://www.w3schools.com/css/img_bg_eyeicon.png');
+background-position: center top;
+background-repeat: no-repeat;
+border: 1px solid black;
+}
+
+.exe5 {
+background-image: url('https://www.w3schools.com/css/img_bg_eyeicon.png');
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+border: 1px solid black;
+}
+
+.exe6 {
+background: powderblue url('https://www.w3schools.com/css/img_bg_eyeicon.png') no-repeat center right/cover;
+}
+
+.exe7 {
+background-image: url('https://www.w3schools.com/css/img_bg_eyeicon.png');
+background-position: center;
+background-repeat: no-repeat;
+background-size: contain;
+border: 1px solid black;
+}
+</style>
+</head>
+<body>
+
+<h2>1) Background-image (default)</h2>
+<div class="exe1"></div>
+
+<h2>2) Background com repeat-x ou repeat-y</h2>
+<div class="exe2"></div>
+
+<h2>3) Background com no-repeat</h2>
+<div class="exe3"></div>
+
+<h2>4) Background com position center top</h2>
+<div class="exe4"></div>
+
+<h2>5) Background com attachment scroll ou fixed</h2>
+<div class="exe5">
+</div>
+
+<h2>6) Background shorthand</h2>
+<div class="exe6"></div>
+
+<h2>7) Background size</h2>
+<div class="exe7">
+<p>auto (default)</p>
+<p>length ou percentage - dois valores sempre</p>
+<p>cover</p>
+<p>contain</p>
+</div>
+
+
+
+
+</body>
+</html>
+
+

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo 002</title>
+</head>
+<body>
+  <h1>JS Introdução</h1>
+  <p>JavaScript consegue modificar o valor de um atributo.</p>
+  <button onclick="mudarImagemOn()">Ligar</button>
+  
+  <img src="../imagens/pic_bulboff.gif" alt="Imagem de uma lâmpada desligada" id="imagem">
+
+  <button onclick="mudarImagemOff()">Desligar</button>
+
+  <script>
+    function mudarImagemOn() {
+      document.getElementById('imagem').src = '../imagens/pic_bulbon.gif';
+    }
+
+    function mudarImagemOff() {
+      document.getElementById('imagem').src = '../imagens/pic_bulboff.gif';
+    }
+  </script>
+
+</body>
+</html>
