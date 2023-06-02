@@ -9,14 +9,79 @@
 
 <body>
   <h1>Strings</h1>
-  <h2>Exemplo 1</h2>
+  <!-- <h2>Exemplo 1</h2>
   <h3>Length</h3>
-  <p>Rafael Santana</p>
+  <p><mark>Rafael Santana</mark></p>
   <p id="e1"></p>
+  <hr> -->
+
+  <!-- <h3>slice()</h3>
+  <p><mark>Maça, Banana, Uva</mark></p>
+  <p id="e2"></p>
+  <hr> -->
 
   <script>
-    let nome = 'Rafael Santana';
-    document.getElementById('e1').textContent = nome + " tem " + nome.length + ' caracteres, incluindo espaços vazios.';
+    let nome = 'Rafael Santana ';
+    let frutas = 'Maça, Banana, Uva';
+    let carros = 'Fusca, Ferrari, Fusca';
+    let text = "I love cats. Cats are very easy to love. Cats are very popular";
+    let frase = 'torce pro Corinthians!!';
+    let abc = "a,b,c,d,e,f";
+
+    // length
+    console.log('length: ' + nome.length);
+
+    // slice
+    let exe2 = console.log('2.' + frutas.slice(6, 12));
+    // Posição de início (6) e corta no fim (12).
+    let exe2a = console.log(frutas.slice(6, 12));
+    let exe2b = console.log(frutas.slice(6));
+    let exe2c = console.log(frutas.slice(-3));
+    let exe2d = console.log(frutas.slice(-11, -5));
+
+    // substring
+    let exe3a = console.log(frutas.substring(6, 12));
+    let exe3b = console.log(frutas.substring(6));
+
+    // substr
+    let exe4a = console.log(frutas.substr(6, 8));
+    let exe4b = console.log(frutas.substr(4));
+    let exe4c = console.log(frutas.substr(-3));
+
+    // replace string content
+    let exe5a = console.log(carros.replace('Fusca', 'BMW'));
+    let exe5b = console.log(nome.replace(/santana/i, 'Carvalho'))
+    let exe5c = console.log(carros.replace(/Fusca/g, 'Opala'));
+
+    // replace all
+    let exe6a = console.log(text);
+    text = text.replaceAll('Cats', 'Dogs');
+    text = text.replaceAll('cats', 'dogs');
+    let exe6b = console.log(text.replaceAll('Cats', 'Dogs'));
+
+    // upperCase & lowerCase
+    console.log(nome.toUpperCase());
+    console.log(nome.toLowerCase());
+
+    // concat()
+    console.log(nome.toLowerCase().concat(' ', frase.toUpperCase()));
+
+    // trim()
+    console.log(nome.length);
+    nome = nome.trim();
+    console.log(nome.length)
+
+    // charAt()
+    console.log(nome.charAt(0));
+
+    // split() = dividir
+    abc = 'a|b|c|d|e|';
+    const myArray = abc.split('|');
+    console.log(myArray)
+    
+
+
+    
   </script>
 </body>
 
