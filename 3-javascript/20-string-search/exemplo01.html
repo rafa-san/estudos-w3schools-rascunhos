@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>String Search</h1>
+</body>
+
+<script>
+  let texto = "Tinha uma pedra no meio do caminho.\nNo meio do caminho tinha uma pedra.";
+  console.log(texto);
+  let texto2 = 'Nome: Rafael Santana'
+
+  // indexOf()
+  // cannot take powerful search values (regular expressions).
+  console.log(texto.indexOf('pedra'));
+  console.log(texto.indexOf('pedra', 11))
+
+  // lastIndexOf()
+  console.log(texto.lastIndexOf('pedra'));
+  console.log(texto.lastIndexOf('não existe'));
+  console.log(texto.lastIndexOf('pedra', 10));// procura da posição 10 até o início
+
+  // search()
+  // method cannot take a second start position argument.
+  console.log(texto.search(/pedra/))
+
+  // includes()
+  console.log(texto.includes('meio'))
+  console.log(texto.includes('pedra', 15))
+
+  // startsWith()
+  console.log(texto.startsWith('Tinha'))
+  texto = texto.toLowerCase();
+  console.log(texto.toLowerCase())
+  console.log(texto.startsWith('tinha'))
+
+  // testes
+  console.log(texto2.indexOf(' '))
+  let texto3 = texto2.slice(texto2.indexOf(' '))
+  console.log(texto3.trim())
+  
+
+
+</script>
+</html>
