@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>String Templates</h1>
+  <div></div>
+  <script>
+    console.log(`Olá, Mundo!`);
+    console.log(`He's often called Johnny`);
+    console.log(`Rafael\nSantana`);
+
+    let primeiroNome = 'Rafael';
+    let segundoNome = 'Santana';
+    console.log(`Olá, ${primeiroNome} ${segundoNome}`);
+
+    // exemplo
+    let header = "Templates Literals";
+    let tags = ["template literals", "javascript", "es6"];
+
+    let html = `<h2>${header}</h2><ul>`;
+
+    for (const i of tags) {
+      html += `<li>${i}</li>`;
+    }
+
+    html += `</ul>`;
+
+    document.querySelector('div').innerHTML = html;
+    // se colocar textContent não funciona
+  </script>
+</body>
+
+</html>

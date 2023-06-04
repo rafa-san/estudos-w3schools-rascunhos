@@ -5,23 +5,48 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Display</title>
+  <style>
+    div {
+      border: 1px solid powderblue;
+      margin: 8px;
+      padding: 16px;
+      width: 200px;
+    }
+  </style>
 </head>
 
 <body>
-  <div>
+  <div id="conteudo1">
     Conteúdo 1
-    <button>Display None</button>
+    <button onclick="displayNone()">Display: None</button>
   </div>
 
-  <div>
+  <div id="conteudo2">
     Conteúdo 2
-    <button>Display Hidden</button>
+    <button onclick="displayHidden()">Display Hidden</button>
   </div>
 
-  <div>
+  <div id="conteudo3">
     Conteúdo 3
-    <button>Mostrar Todos</button>
+    <button onclick="restaurar()">Mostrar Todos</button>
   </div>
+
+  <script>
+    function displayNone() {
+      document.getElementById('conteudo1').style.display = 'none';
+    }
+
+    function displayHidden() {
+      document.getElementById('conteudo2').style.visibility = 'hidden';
+    }
+
+    function restaurar() {
+      document.getElementById('conteudo1').style.display = 'block';
+      document.getElementById('conteudo2').style.visibility = 'visible';
+    }
+
+
+  </script>
 </body>
 
 </html>
