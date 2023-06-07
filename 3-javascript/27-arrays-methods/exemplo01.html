@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array Methods</title>
+</head>
+
+<body>
+  <h1>Array Methods</h1>  
+
+  <script>
+    const frutas = ['Banana', 'Laranja', 'Uva', 'Pêra'];
+    const myGirls = ["Cecilie", "Lone"];
+    const myBoys = ["Emil", "Tobias", "Linus"];
+    const myChildren = myGirls.concat(myBoys);
+    const arr3 = ["Robin", "Morgan"];
+    const novaArray = myGirls.concat(myBoys, arr3);
+    const bikes = ['Cannondale', 'Trek', 'Specialized']
+
+    console.log(frutas.toString());
+    console.log(frutas.join(' * '));
+
+    console.log(frutas.pop());
+    console.log(frutas);
+
+    frutas.push('Kiwi');
+    console.log(frutas);
+
+    frutas.shift();
+    console.log(frutas.shift());
+    console.log(frutas);
+
+    frutas.unshift('Melão');
+    console.log(frutas.unshift('Manga'));
+    console.log(frutas);
+
+    console.log(myChildren);
+    console.log(novaArray);
+
+    console.log(bikes);
+    bikes.splice(2, 0, 'Caloi');
+    console.log(bikes);
+    bikes.splice(1, 1);
+    console.log(bikes);
+
+    const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+    console.log(fruits);
+    const fruits2 = fruits.slice(2);
+    console.log(fruits2);
+
+    
+  </script>
+</body>
+
+</html>

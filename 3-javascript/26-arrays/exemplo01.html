@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arrays</title>
+</head>
+
+<body>
+  <h1>Arrays</h1>
+
+  <h2>Looping an array</h2>
+  <div id="a"></div>
+  <hr>
+  <h2>Looping an array - Outra Forma</h2>
+  <div id="b"></div>
+
+  <script>
+  const bicicletas = ["Trek", "Cannondale", "Specialized"];
+  const cars = [];
+  const frutas = ["Banana", "Laranja", "Uva", "Pêra"];
+
+  console.log(bicicletas);
+  console.log(bicicletas[1]);
+  
+  console.log(cars);
+  cars[0] = "Saab";
+  console.log(cars);
+  cars[0] = "BMW";
+  console.log(cars);
+
+  console.log(frutas);
+  console.log(frutas.length);
+  console.log(frutas[0]);
+  console.log(frutas[frutas.length - 1]);
+
+  console.log(frutas.push('Limão'));
+  console.log(frutas);
+
+  console.log(typeof frutas)
+
+  // Looping an array
+  let frutasTamanho = frutas.length;
+
+  let text = "<ul>";
+  for (let i = 0; i < frutasTamanho; i++) {
+    text += "<li>" + frutas[i] + "</li>";
+  }
+  text += "</ul>";
+
+  document.getElementById('a').innerHTML = text;
+
+
+  // Looping an array - outra forma
+  let text2 = '<ul>';
+
+  function myFunction(value) {
+    text2 += '<li>' + value + '</li>';
+  }
+
+  frutas.forEach(myFunction);
+  text2 += '</ul>';
+
+  document.getElementById('b').innerHTML = text2;
+
+
+
+
+  </script>
+</body>
+
+</html>

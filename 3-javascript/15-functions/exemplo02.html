@@ -24,14 +24,16 @@
 function teste() {
 let temperatura = parseInt(document.getElementById('numero').value);
 
-document.querySelector('span').textContent = temperatura
+// document.querySelector('span').textContent = temperatura
 
 
 let formula = (temperatura - 32) * 5 / 9;
 
 //(5/9) * (fahrenheit-32);
 
-document.querySelector('div').textContent = formula;
+document.querySelector('div').textContent = temperatura + " = " + formula;
+
+document.write(temperatura + " = " + formula)
 
 }
 
