@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+* {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.principal {
+  display: flex;
+}
+
+details {
+  border: 1px solid lightgray;
+  flex: 33%;
+  padding: 8px;
+}
+
+summary {
+  background-color: lightgray;
+  padding: 8px;
+}
+
+
+ul {
+  list-style-type: disc;
+}
+
+li {
+  padding: 4px;
+}
+
+li a {
+  background-color: powderblue;
+}
+
+li:hover {
+  background-color: rgba(211, 211, 211, 0.5);
+}

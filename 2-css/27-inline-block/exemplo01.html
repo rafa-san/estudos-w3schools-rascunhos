@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Inline-Block</title>
+  <title>CSS Inline-Block</title>
+  <link rel="stylesheet" href="../../estilos/2-css.css">
   <style>
     .a {
       background-color: powderblue;
@@ -15,19 +16,21 @@
     .b {
       background-color: coral;
       display: inline-block;
-      height: 50px;
+      padding: 20px;
     }
 
     .c {
       background-color: lightgreen;
       display: block;
-      height: 50px;
+      padding: 20px;
     }
   </style>
 </head>
 
 <body>
-  <p>Lorem ipsum dolor sit amet, <span class="a">consectetur</span> adipiscing elit. Vestibulum consequat <span class="b">scelerisque</span> elit sit amet consequat. Aliquam erat volutpat. Aliquam <span class="c">venenatis</span> gravida nisl sit amet facilisis. Nullam cursus fermentum velit sed laoreet.</p>  
+  <h1>Inline-Block</h1>
+
+  <p>Lorem ipsum dolor sit amet, <span class="a">display inline</span> adipiscing elit. Vestibulum consequat <span class="b">display inline-block</span> elit sit amet consequat. Aliquam erat volutpat. Aliquam <span class="c">display block</span> gravida nisl sit amet facilisis. Nullam cursus fermentum velit sed laoreet.</p>  
 </body>
 
 </html>

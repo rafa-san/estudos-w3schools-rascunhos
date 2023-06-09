@@ -4,32 +4,40 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>CSS Position</title>
   <style>
     .container {
       position: relative;
     }
 
     img {
-      height: 96vh;
+      height: 80vh;
       opacity: 0.6;
       width: 100%;
     }
 
     .texto {
-      font-size: 2em;
-
       position: absolute;
       top: 24px;
       left: 24px;
+      font-size: 2em;
+    }
+
+    .texto2 {
+      position: absolute;
+      bottom: 24px;
+      right: 24px;
+      font-size: 2em;
     }
   </style>
 </head>
 
 <body>
+  <h1>Position</h1>
   <div class="container">
     <img src="../../imagens/unnamed1.jpg" atl="Imagem de uma casa">
-    <div class="texto">Algum Texto</div>
+    <div class="texto">Estou com uma position absolute!</div>
+    <div class="texto2">Eu também!</div>
   </div>
 </body>
 

@@ -2,67 +2,67 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>CSS Z-index</title>
   <style>
     .container {
-      border: 1px solid yellow;
-      height: 300px;
-      margin-top: 40px;
       position: relative;
+      height: 300px;
+      margin: 80px auto;
+      width: 90%;
     }
 
     .div1 {
+      position: absolute;
+      top: 0;
       background-color: powderblue;
       border: 2px solid blue;
       height: 200px;
       width: 90%;
       z-index: 0;
-      position: absolute;
-      top: 0;
     }
 
     .div2 {
-      background-color: coral;
-      height: 200px;
-      width: 40%;
-      z-index: 4;
       position: absolute;
       top: 20px;
       right: -10px;
+      background-color: coral;
+      height: 200px;
+      width: 50%;
+      z-index: 4;
     }
 
     .div3 {
+      position: absolute;
+      bottom: 20px;
+      left: 100px;
       background-color: gray;
       color: white;
       height: 200px;
       width: 50%;
       z-index: 0;
-      position: absolute;
-      bottom: 20px;
-      left: 100px;
     }
 
     .div4 {
-      background-color: brown;
-      height: 130px;
-      width: 90%;
-      z-index: 0;
       position: absolute;
       bottom: -20px;
+      background-color: brown;
+      height: 130px;
+      width: 80%;
+      z-index: 0;
     }
   </style>
 </head>
 
 <body>
-  
-</body>
+  <h1>Z-index</h1>
   <div class="container">
     <div class="div1">Div 1</div>
     <div class="div2">Div 2</div>
     <div class="div3">Div 3</div>
     <div class="div4">Div 4</div>
   </div>
+</body>
   
 </html>

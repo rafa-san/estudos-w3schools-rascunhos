@@ -2,14 +2,11 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>CSS Position</title>
+  <link rel="stylesheet" href="../../estilos/2-css.css">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-    }
 
     div {
       border: 1px solid powderblue;
@@ -19,28 +16,30 @@
       width: 70%;
     }
 
+    .div1 {
+      margin: 40px 0 40px 8px;
+    }
+
     .div2 {
-      color: red;
-      left: 80px;
       position: relative;
+      color: red;
+      margin: auto;
     }
 
     .div3 {
-      color: blue;
-      
       position: fixed;
-      right: 0;
+      right: 16px;
       bottom: 0;
+      color: blue;
     }
 
     .div4 {
-      color: green;
-      margin: 0;
-      padding: 8px 0;
-
       position: absolute;
       right: 0;
       bottom: 0;
+      color: green;
+      margin: 0;
+      padding: 8px 0;
     }
   </style>
 </head>
@@ -48,16 +47,14 @@
 <body>
   <h1>Position</h1>
 
-  <div class="div1">Static</div>
+  <div class="div1">Static (Default)</div>
 
   <div class="div2">
     Relative
-    <div class="div4">Absolute</div>
+    <div class="div4">Absolute (Posiciono onde eu quiser na página)</div>
   </div>
 
-  <div class="div3">Fixed</div>
-
-
+  <div class="div3">Fixed (Posiciono num lugar fixo na página)</div>
 </body>
 
 </html>
