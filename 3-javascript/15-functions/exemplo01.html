@@ -1,30 +1,39 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Exemplo 01</title>
+  <title>JavaScript Functions</title>
+  <link rel="stylesheet" href="../../estilos/3-js.css">
 </head>
+
 <body>
-  <p>Função:</p>
+  <h1>Funções</h1>
+  
+  <p>Alguns exemplos e exercícios foram feitos usando <code>console.log()</code></p>
+
+  <p>Tecle <kbd>F12</kbd> para abrir o <strong>devtools</strong> e visualizar todas as atividades desta página.</p>
+
   <div></div>
 
   <script>
-    // function teste(n1, n2) {
-    //   return n1 * n2;
-    // }
-    // document.querySelector('div').textContent = teste(3, 2);
-
-
-    // function myFunction() {
-    //   alert('Hello, World!');
-    // }
-    // myFunction();
-
-    function myFunction(){
-      document.write('Hello');
+    function teste(n1, n2) {
+      return n1 * n2;
     }
-    document.querySelector('div').textContent = myFunction();
+    console.log(teste(3, 2));
+
+
+    function myFunction() {
+      alert('Hello, World!');
+    }
+    myFunction();
+
+    function myFunction2(){
+      return 'Hello, world!';
+    }
+    document.querySelector('div').textContent = myFunction2();
   </script>
 </body>
+
 </html>
