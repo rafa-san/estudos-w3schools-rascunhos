@@ -1,7 +1,9 @@
 @charset "UTF-8";
 
-* {
+body {
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: auto;
+  width: 95%;
 }
 
 .exe1-a {

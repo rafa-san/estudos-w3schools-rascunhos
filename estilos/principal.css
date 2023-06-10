@@ -1,21 +1,21 @@
 @charset "UTF-8";
 
-* {
+body {
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.principal {
-  display: flex;
+  margin: auto;
+  width: 95%;
 }
 
 details {
-  border: 1px solid lightgray;
-  flex: 33%;
+  border: 1px solid rgb(4, 170, 109);
+  margin: 16px 0;
   padding: 8px;
 }
 
 summary {
-  background-color: lightgray;
+  background-color: rgb(4, 170, 109);
+  color: white;
+  font-weight: 500;
   padding: 8px;
 }
 
@@ -29,9 +29,10 @@ li {
 }
 
 li a {
-  background-color: powderblue;
+  background-color: rgba(4, 170, 109, 0.5);
+  font-weight: 500;
 }
 
 li:hover {
-  background-color: rgba(211, 211, 211, 0.5);
+  background-color: rgba(4, 170, 109, 0.2);
 }
