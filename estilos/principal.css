@@ -36,3 +36,9 @@ li a {
 li:hover {
   background-color: rgba(4, 170, 109, 0.2);
 }
+
+.atividade {
+  border: 1px solid rgb(4, 170, 109);
+  margin: 16px 0;
+  padding: 8px;
+}
