@@ -6,6 +6,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CSS Combinators - Exemplo 01</title>
   <link rel="stylesheet" href="../../estilos/principal.css">
+  <style>
+    section p {
+      color: blue;
+    }
+
+    section > p {
+      background-color: powderblue;
+    }
+
+    section + p {
+      color: red;
+    }
+
+    section ~ p {
+      background-color: lightgray;
+    }
+  </style>
 </head>
 
 <body>
@@ -15,12 +32,12 @@
     <h2>Descendant Selector</h2>
     <p>The descendant selector matches all elements that are descendants of a specified element.</p>
     <section>
-      <p>Paragraph 1 in the div.</p>
-      <p>Paragraph 2 in the div.</p>
-      <article><p>Paragraph 3 in the div.</p></article>
+      <p>Paragraph 1 in the section.</p>
+      <p>Paragraph 2 in the section.</p>
+      <article><p>Paragraph 3 in the section.</p></article>
     </section>
-    <p>Paragraph 4. Not in a div.</p>
-    <p>Paragraph 5. Not in a div.</p>
+    <p>Paragraph 4. Not in a section.</p>
+    <p>Paragraph 5. Not in a section.</p>
   </div>
 </body>
 

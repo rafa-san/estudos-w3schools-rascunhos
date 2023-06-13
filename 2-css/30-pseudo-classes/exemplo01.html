@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Pseudo-classes - Exemplo 01</title>
+  <link rel="stylesheet" href="../../estilos/principal.css">
+  <style>
+    a:visited {
+      color: red;
+    }
+
+    a:hover {
+      color: blue;
+      text-decoration: none;
+    }
+
+    a:active {
+      color: brown;
+      font-size: 2em;
+    }
+
+    a.diferente:hover {
+      background-color: powderblue;
+    }
+
+    .escondido {
+      background-color: coral;
+      color: white;
+      display: none;
+      font-weight: 500;
+      padding: 8px;
+    }
+
+    div:hover .escondido {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Pseudo-classes - Exemplo 01</h1> 
+  
+  <div>
+    <p><a href="#">Isso é um link</a></p>
+    <p><a href="#" class="diferente">Isso é um link também.</a></p>
+    <p class="escondido">Parágrafo com display: none, que aparece somente com o hover.</p>
+  </div>
+</body>
+
+</html>
