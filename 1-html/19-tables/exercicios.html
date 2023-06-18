@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Tables - Exercícios</title>
+  <link rel="stylesheet" href="../../estilos/principal.css">
+  <style>
+    .atividade {
+      background-color: lightgray;
+    }
+
+    table,
+    th,
+    td {
+      background-color: white;
+      border: 1px solid gray;
+      border-collapse: collapse;
+    }
+
+    table {
+      width: 100%;
+    }
+
+    caption {
+      background-color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>CSS Tables - Exercícios</h1>
+
+  <h2>Exercício 1</h2>
+
+  <p>Add a table row with two table headers.</p>
+
+  <p>The two table headers should have the value "Name" and "Age".</p>
+
+  <section class="atividade">
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Jill Smith</td>
+        <td>50</td>
+      </tr>
+    </table>
+  </section>
+
+  <h2>Exercício 2</h2>
+
+  <p>Add a table caption that says "Names".</p>
+
+  <section class="atividade">
+    <table>
+    <caption>Names</caption>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Points</th>
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+      </tr>
+    </table>
+  </section>
+
+  <h2>Exercício 3</h2>
+
+  <p>Use CSS styles to make the table 300 pixels wide.</p>
+
+  <section class="atividade">
+    <table style="width:300px;">
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Points</th>
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+      </tr>
+    </table>
+  </section>
+
+  <h2>Exercício 4</h2>
+
+  <p>Use the correct HTML attribute to make the first TH element span two columns.</p>
+
+  <section class="atividade">
+    <table>
+      <tr>
+        <th colspan="2">Name</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+      </tr>
+    </table>
+  </section>
+
+  <h2>Exercício 5</h2>
+
+  <p>Use the correct HTML attribute to make the second TH element span two rows.</p>
+
+  <section class="atividade">
+    <table>
+      <tr>
+        <th>Name</th>
+        <td>Jill Smith</td>
+      </tr>
+      <tr>
+        <th rowspan="2">Phone</th>
+        <td>555-77854</td>
+      </tr>
+      <tr>
+        <td>555-77854</td>
+      </tr>
+    </table>
+  </section>
+</body>
+
+</html>
+
+
