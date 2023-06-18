@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Pseudo-classes - Exemplo 02</title>
+  <link rel="stylesheet" href="../../estilos/principal.css">
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th, tr, td {
+      border: 1px solid gray;
+    }
+
+    div + p {
+      background-color: powderblue;
+      border: 1px solid red
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Pseudo-classes - Exemplo 02</h1> 
+
+  <table>
+    <tbody><tr>
+      <th>Selector</th>
+      <th>Example</th>
+      <th>Example description</th>
+    </tr>
+    <tr>
+      <td>:active</td>
+      <td>a:active</td>
+      <td>Selects the active link</td>
+    </tr>
+    <tr>
+      <td>:empty</td>
+      <td>p:empty</td>
+      <td>Selects every &lt;p&gt; element that has no children</td>
+    </tr>
+    <tr>
+      <td>:first-child</td>
+      <td>p:first-child</td>
+      <td>Selects every &lt;p&gt; elements that is the first child of its parent</td>
+    </tr>
+    <tr>
+      <td>:first-of-type</td>
+      <td>p:first-of-type</td>
+      <td>Selects every &lt;p&gt; element that is the first &lt;p&gt; element of its parent</td>
+    </tr>
+    <tr>
+      <td>:hover</td>
+      <td>a:hover</td>
+      <td>Selects links on mouse over</td>
+    </tr>
+    <tr>
+      <td>:lang(<i>language</i>)</td>
+      <td>p:lang(it)</td>
+      <td>Selects every &lt;p&gt; element with a lang attribute value starting with "it"</td>
+    </tr>
+    <tr>
+      <td>:last-child</td>
+      <td>p:last-child</td>
+      <td>Selects every &lt;p&gt; elements that is the last child of its parent</td>
+    </tr>
+    <tr>
+      <td>:last-of-type</td>
+      <td>p:last-of-type</td>
+      <td>Selects every &lt;p&gt; element that is the last &lt;p&gt; element of its parent</td>
+    </tr>
+    <tr>
+      <td>:link</td>
+      <td>a:link</td>
+      <td>Selects all unvisited links</td>
+    </tr>
+    <tr>
+      <td>:not(selector)</td>
+      <td>:not(p)</td>
+      <td>Selects every element that is not a &lt;p&gt; element</td>
+    </tr>
+    <tr>
+      <td>:nth-child(n)</td>
+      <td>p:nth-child(2)</td>
+      <td>Selects every &lt;p&gt; element that is the second child of its parent</td>
+    </tr>
+    <tr>
+      <td>:nth-last-child(n)</td>
+      <td>p:nth-last-child(2)</td>
+      <td>Selects every &lt;p&gt; element that is the second child of its parent, counting from the last child</td>
+    </tr>
+    <tr>
+      <td>:nth-last-of-type(n)</td>
+      <td>p:nth-last-of-type(2)</td>
+      <td>Selects every &lt;p&gt; element that is the second &lt;p&gt; element of its parent, counting from the last child</td>
+    </tr>
+    <tr>
+      <td>:nth-of-type(n)</td>
+      <td>p:nth-of-type(2)</td>
+      <td>Selects every &lt;p&gt; element that is the second &lt;p&gt; element of its parent</td>
+    </tr>
+    <tr>
+      <td>:only-of-type</td>
+      <td>p:only-of-type</td>
+      <td>Selects every &lt;p&gt; element that is the only &lt;p&gt; element of its parent</td>
+    </tr>
+    <tr>
+      <td>:only-child</td>
+      <td>p:only-child</td>
+      <td>Selects every &lt;p&gt; element that is the only child of its parent</td>
+    </tr>
+    <tr>
+      <td>:root</td>
+      <td>root</td>
+      <td>Selects the document's root element</td>
+    </tr>
+    <tr>
+      <td>:target</td>
+      <td>#news:target</td>
+      <td>Selects the current active #news element (clicked on a URL containing that anchor name)</td>
+    </tr>
+    <tr>
+      <td>:visited</td>
+      <td>a:visited</td>
+      <td>Selects all visited links</td>
+    </tr>
+    </tbody>
+  </table>
+
+  <h2>Formulários - Input</h2>
+  <table>
+    <tbody><tr>
+      <th>Selector</th>
+      <th>Example</th>
+      <th>Example description</th>
+    </tr>
+    <tr>
+      <td>:checked</td>
+      <td>input:checked</td>
+      <td>Selects every checked &lt;input&gt; element</td>
+    </tr>
+    <tr>
+      <td>:disabled</td>
+      <td>input:disabled</td>
+      <td>Selects every disabled &lt;input&gt; element</td>
+    </tr>
+    <tr>
+      <td>:enabled</td>
+      <td>input:enabled</td>
+      <td>Selects every enabled &lt;input&gt; element</td>
+    </tr>
+    <tr>
+      <td>:focus</td>
+      <td>input:focus</td>
+      <td>Selects the &lt;input&gt; element that has focus</td>
+    </tr>
+    <tr>
+      <td>:in-range</td>
+      <td>input:in-range</td>
+      <td>Selects &lt;input&gt; elements with a value within a specified range</td>
+    </tr>
+    <tr>
+      <td>:invalid</td>
+      <td>input:invalid</td>
+      <td>Selects all &lt;input&gt; elements with an invalid value</td>
+    </tr>
+    <tr>
+      <td>:optional</td>
+      <td>input:optional</td>
+      <td>Selects &lt;input&gt; elements with no "required" attribute</td>
+    </tr>
+    <tr>
+      <td>:out-of-range</td>
+      <td>input:out-of-range</td>
+      <td>Selects &lt;input&gt; elements with a value outside a specified range</td>
+    </tr>
+    <tr>
+      <td>:read-only</td>
+      <td>input:read-only</td>
+      <td>Selects &lt;input&gt; elements with a "readonly" attribute specified</td>
+    </tr>
+    <tr>
+      <td>:read-write</td>
+      <td>input:read-write</td>
+      <td>Selects &lt;input&gt; elements with no "readonly" attribute</td>
+    </tr>
+    <tr>
+      <td>:required</td>
+      <td>input:required</td>
+      <td>Selects &lt;input&gt; elements with a "required" attribute specified</td>
+    </tr>
+    <tr>
+      <td>:valid</td>
+      <td>input:valid</td>
+      <td>Selects all &lt;input&gt; elements with a valid value</td>
+    </tr>
+    </tbody>
+  </table>
+  
+  <div class="atividade">
+    <h1>Welcome to My Homepage</h1>
+    
+    <div class="intro">
+      <p style="padding: 8px"></p>
+
+      <p>My name is Donald <span id="Lastname">Duck.</span></p>
+
+      <p id="my-Address">I live in Duckburg</p>
+
+      <p>I have many friends:</p>
+    </div>
+
+    <p>Say Hello to:</p>
+
+    <ul id="Listfriends">
+      <li>Goofy</li>
+      <li>Mickey</li>
+      <li>Daisy</li>
+      <li>Pluto</li>
+    </ul>
+
+    <p class="myquote">All my friends are great!<br>
+    But I really like Daisy!!</p>
+
+    <p lang="it" title="Hello beautiful">Ciao bella</p>
+
+    <h3>We are all animals!</h3>
+
+    <p><b>My latest discoveries have led me to believe that we are all animals:</b></p>
+
+    <div class="helpTable" style="width: 220px;">
+      <span class="markup">&lt;table&gt;</span>
+      
+      <table cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr style="background-color: rgb(241, 241, 241);">
+            <th>Name</th>
+            <th>Type of Animal</th>
+          </tr>
+          <tr style="background-color: rgb(241, 241, 241);">
+            <td>Mickey</td>
+            <td>Mouse</td>
+          </tr>
+          <tr style="background-color: rgb(241, 241, 241);">
+            <td>Goofey</td>
+            <td>Dog</td>
+          </tr>
+          <tr style="background-color: rgb(241, 241, 241);">
+            <td>Daisy</td>
+            <td>Duck</td>
+          </tr>
+          <tr style="background-color: rgb(241, 241, 241);">
+            <td>Pluto</td>
+            <td>Dog</td>
+          </tr>
+        </tbody>
+      </table>
+      <span class="markup">&lt;/table&gt;</span>
+      </div>
+
+
+
+      <div class="noSel newsletter" style="border: 2px solid rgb(153, 214, 255); margin: 16px 0; padding: 10px">
+        <form>
+          <h4>Subscribe to my newsletter:</h4>
+
+          <div style="overflow:auto;">
+            <div style="width:100px;float:left;">
+              Name:
+            </div>
+            <div style="width:180px;float:left;">
+              <input type="text" style="width: 150px;" class="markup">
+            </div>
+          </div>
+
+          <div style="overflow:auto;">
+            <div style="width:100px;float:left;">
+              E-mail:
+            </div>
+            <div style="width:180px;float:left;">
+              <input type="email" style="width: 150px;" class="markup" onchange="changeEmail(this)">
+            </div>
+          </div>
+
+          <div class="noSel" style="margin-top:10px;">
+            Female: 
+            <input name="rr" type="radio" id="rr1" checked="checked" style="outline: transparent solid 2px;">
+            Male: 
+            <input name="rr" type="radio" id="rr2" style="outline: transparent solid 2px;">
+            Other: 
+            <input name="rr" type="radio" id="rr3" disabled="disabled" style="outline: transparent solid 2px;">  
+          </div>
+
+          <h4>Newscategories:</h4>
+          <div style="overflow:auto;">
+            <div style="width:60px;float:left;">
+              Ducks:
+            </div>
+            <div style="width:20px;float:left;">
+              <input id="cc1" type="checkbox" checked="checked" style="outline: transparent solid 2px;">
+            </div>
+          </div>
+
+          <div style="overflow:auto;">
+            <div style="width:60px;float:left;">
+              Dogs:
+            </div>
+            <div style="width:20px;float:left;">
+              <input id="cc2" type="checkbox" style="outline: transparent solid 2px;">
+            </div>
+          </div>
+
+          <div style="overflow:auto;">
+            <div style="width:60px;float:left;">
+              Humans:
+            </div>
+            <div style="width:20px;float:left;">
+              <input id="cc3" type="checkbox" style="outline: transparent solid 2px;">
+            </div>
+          </div>
+          
+          <p class="noSel">Your lucky number (between 1 and 10): <input type="number" min="1" max="10" value="7" onchange="changeLuckyNumber(this)"></p>
+
+        </form>
+        </div>
+  </div>
+</body>
+
+</html>
