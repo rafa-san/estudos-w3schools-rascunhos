@@ -30,6 +30,7 @@ summary {
 .principal li a {
   background-color: rgba(4, 170, 109, 0.5);
   font-weight: 500;
+  padding: 0 4px;
 }
 
 .principal li:hover {
