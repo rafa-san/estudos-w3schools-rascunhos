@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CSS Text</title>
-  <link rel="stylesheet" href="../../estilos/2-css.css">
+  <title>CSS Text - Exemplo 01</title>
+  <link rel="stylesheet" href="../../estilos/principal.css">
   <style>
     h1 {
       text-align: center;
@@ -25,24 +25,62 @@
 
     p {
       color: blue;
-      font-family: Tahoma, Verdana, sans-serif;
       letter-spacing: 2px;
       line-height: 1.4;
       text-align: justify;
       text-align-last: left;
       text-indent: 50px;
     }
+
+    h2 + p {
+      text-align-last: right;
+    }
+
+    h3 {
+      margin-top: 24px;
+      text-decoration: overline underline red dotted 2px;
+      text-transform: capitalize;
+    }
+
+    h3 + p {
+      color: black;
+      letter-spacing: 4px;
+      line-height: 3em;
+      word-spacing: 8px;
+    }
+
+    h4 {
+      font-size: 3em;
+      margin: 24px auto;
+      text-align: center;
+      text-shadow: -4px 2px 16px coral;
+    }
+
+    h5 {
+      margin: 32px auto;
+      text-align: center;
+      font-size: 3em;
+      text-shadow: 3px 3px 4px powderblue, 3px 3px 4px yellow;
+    }
   </style>
 </head>
 
 <body>
-  <h1>Formatação</h2>
+  <h1>CSS Text - Exemplo 01</h2>
 
-  <div>
   <h2>Text Formatting</h2>
-  <p>This text is styled with some of the text formatting properties. The heading uses the text-align, text-transform, and color properties. The paragraph is indented, aligned, and the space between characters is specified. The underline is removed from this colored "Try it Yourself" link.</p>
-  <p>This text is styled with some of the text formatting properties. The heading uses the text-align, text-transform, and color properties. The paragraph is indented, aligned, and the space between characters is specified. The underline is removed from this colored "Try it Yourself" link.</p>
-  </div>
+
+  <p>This text is styled with some of the text formatting properties. The heading uses the text-align, text-transform, and color properties. The paragraph is indented, aligned, and the space between characters is specified. </p>
+
+  <p>This text is styled with some of the text formatting properties. The heading uses the text-align, text-transform, and color properties. The paragraph is indented, aligned, and the space between characters is specified. </p>
+
+  <h3>capítulo número três</h3>
+
+  <p>In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since. 'Whenever you feel like criticizing anyone,' he told me, 'just remember that all the people in this world haven't had the advantages that you've had.'</p>
+
+  <h4>Text Shadow</h4>
+
+  <h5>Outro Text Shadow!</h5>
 </body>
 
 </html>
