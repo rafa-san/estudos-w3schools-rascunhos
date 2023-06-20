@@ -24,13 +24,18 @@ summary {
 }
 
 .principal li {
-  padding: 4px;
+  padding: 6px 4px;
 }
 
 .principal li a {
   background-color: rgba(4, 170, 109, 0.5);
   font-weight: 500;
+  margin: 2px 0;
   padding: 0 4px;
+}
+
+.principal a {
+  display: inline-block;
 }
 
 .principal li:hover {
