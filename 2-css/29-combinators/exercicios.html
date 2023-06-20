@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Combinators - Exercícios</title>
+  <link rel="stylesheet" href="../../estilos/principal.css">
+  <style>
+    .exe1 p {
+      color: red;
+    }
+
+    .exe2 > p {
+      color: blue;
+    }
+
+    .exe3 + p {
+      color: coral;
+    }
+
+    .exe4 ~ p {
+      color: green;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>CSS Combinators - Exercícios</h1>
+
+  <h2>Exercício 1</h2>
+  
+  <p>Change the color of all <code>p</code> elements, that are descendants of <code>div</code> elements, to "red".</p>
+
+  <section class="atividade">
+    <div class="exe1">
+      <p>Parágrafo dentro da div</p>
+      <p>Parágrafo dentro da div</p>
+    </div>
+    <p>Parágrafo fora da div</p>
+    <p>Parágrafo fora da div</p>
+  </section> 
+
+  <h2>Exercício 2</h2>
+  
+  <p>Change the color of all <code>p</code> elements, that are immediate children of <code>div</code> elements, to "blue".</p>
+
+  <section class="atividade">
+    <div class="exe2">
+      <p>Parágrafo dentro da div</p>
+      <p>Parágrafo dentro da div</p>
+      <article>Parágrafo dentro de um article, que está dentro da div.</article>
+    </div>
+    <p>Parágrafo fora da div</p>
+    <p>Parágrafo fora da div</p>
+  </section> 
+
+  <h2>Exercício 3</h2>
+  
+  <p>Change the color of the first <code>p</code> element that is directly after a <code>div</code> element, to "coral".</p>
+
+  <section class="atividade">
+    <div class="exe3">
+      <p>Parágrafo dentro da div</p>
+      <p>Parágrafo dentro da div</p>
+      <article>Parágrafo dentro de um article, que está dentro da div.</article>
+    </div>
+    <p>Parágrafo fora da div</p>
+    <p>Parágrafo fora da div</p>
+  </section> 
+
+  <h2>Exercício 4</h2>
+  
+  <p>Change the color of the <code>p</code> elements that are siblings of a <code>div</code> element, to "green".</p>
+
+  <section class="atividade">
+    <div class="exe4">
+      <p>Parágrafo dentro da div</p>
+      <p>Parágrafo dentro da div</p>
+      <article>Parágrafo dentro de um article, que está dentro da div.</article>
+    </div>
+    <p>Parágrafo fora da div</p>
+    <p>Parágrafo fora da div</p>
+  </section> 
+</body>
+
+</html>
+
+

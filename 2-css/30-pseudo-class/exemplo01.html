@@ -7,6 +7,15 @@
   <title>CSS Pseudo-classes - Exemplo 01</title>
   <link rel="stylesheet" href="../../estilos/principal.css">
   <style>
+    p {
+      line-height: 2em;
+    }
+
+    div {
+      border: 2px solid lightgray;
+      height: 100px;
+    }
+
     a:visited {
       color: red;
     }
@@ -42,9 +51,10 @@
 <body>
   <h1>Pseudo-classes - Exemplo 01</h1> 
   
+  <p><a href="#">Isso é um link</a></p>
+  <p><a href="#" class="diferente">Isso é um link também.</a></p>
+
   <div>
-    <p><a href="#">Isso é um link</a></p>
-    <p><a href="#" class="diferente">Isso é um link também.</a></p>
     <p class="escondido">Parágrafo com display: none, que aparece somente com o hover.</p>
   </div>
 </body>
