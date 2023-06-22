@@ -16,14 +16,6 @@
   <p>Tecle <kbd>F12</kbd> para abrir o <strong>devtools</strong> e visualizar as atividades desta página.</p>
 
   <script>
-    const nome = "Yusuke Urameshi";
-    //console.log(typeof nome); // string
-    //console.log(nome.length); // 27
-
-    
-    //console.log(nome.slice(0, 5)); // inclui o primeito | não inclui o segundo
-    //console.log(nome.slice(-6, -1)); // não inclui o primeiro | inclui o segundo
-
     const frase = "Tinha uma pedra no meio do caminho. No meio do caminho tinha uma pedra.";
     console.log(frase);
     const novaFrase = frase.replace("pedra", "rocha");
@@ -33,45 +25,38 @@
     const frase4 = frase.replace(/tinha/gi, "havia");
     console.log(frase4);
 
-    const name = "John Doe";
-    console.log(name.toUpperCase());
-    console.log(name.toLowerCase());
-
-    console.log(nome.concat(" é " + name));
-
 
     const exemplo = "a e i o u";
-    console.log(exemplo.charAt(2));
-    console.log(exemplo.charCodeAt(2));
-
-    const myArray = exemplo.split();// retorna tudo como um item só na array
+    const myArray = exemplo.split(); // retorna tudo como um item só na array
+    console.log(myArray);
     const myArray2 = exemplo.split("");
     console.log(myArray2);
 
-    const exemplo2 = "name: John Wick";
-    console.log(exemplo2.indexOf(":")); // 4
-    const exemplo3 = exemplo2.slice(5);
-    console.log(exemplo3);
 
-    let str = 'Hello World'; // string
-    let reversed = str.split('').reverse().join('');
-    console.log(typeof reversed); // Saída: dlroW olleH
-    
-    let p1 = str.split("");// array
-    //console.log(p1); 
-
-    let p2 = p1.reverse();
-    //console.log(p2);
-
-    let p3 = p2.join('');
-    console.log(typeof p3);
+    let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    let length = text.length;
+    console.log(length);
+    console.log(text.slice(-1));
 
 
-    let str2 = 'Hello';
-    console.log(str2[5] === undefined); // Saída: H
-    console.log(str2.charAt(5) === undefined); // Saída também H
-    console.log(str2[1]); // Saída: e
+    const name = 'Rafael Wick';
+    const name2 = 'John Santana';
+    console.log(name.replace('Rafael', 'John'));
+    console.log(name.replace(/wick/i, 'Santana').toLowerCase());
+    console.log(name.toLowerCase().replace(/wick/i, 'Santana'));
+    console.log(name.concat(` ou `, name2));
 
+
+    console.log(name.charAt(0));
+    console.log(name.charCodeAt(0));
+    console.log(name[0]);
+
+
+    const name3 = 'nome:Rafael Santana de Carvalho';
+    const myArray3 = name3.split(':');
+    console.log(myArray3);
+    console.log(typeof myArray3);
+    console.log(myArray3[1]);
 
   </script>
 </body>

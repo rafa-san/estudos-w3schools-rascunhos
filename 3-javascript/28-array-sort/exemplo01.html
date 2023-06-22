@@ -31,17 +31,17 @@
     const frutas = ['Banana', 'Maça', 'Pêra', 'Abacaxi'];
 
     // Ordem Alfabética
-    console.log(frutas.sort());
+    console.log(frutas.sort()); // funciona bem com strings, não com números
     console.log(frutas.reverse());
 
 
     // Ordenando números
     const numeros = [40, 100, 1, 5, 25, 10];
     console.log(numeros);
-    console.log(numeros.sort()) // Não funciona bem dessa forma
+    console.log(numeros.sort()) // Com números não funciona bem dessa forma
 
     // Funciona melhor dessa forma:
-    numeros.sort(function(a, b){return a - b});
+    numeros.sort(function(a, b){return a - b}); // contrário = b - a
     console.log(numeros);
 
 

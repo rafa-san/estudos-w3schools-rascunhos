@@ -15,24 +15,43 @@
 
   <p>Tecle <kbd>F12</kbd> para abrir o <strong>devtools</strong> e visualizar todas as atividades desta página.</p>
 
-  <div></div>
+  <div class="atividade">
+    <input type="text">
+    <button>Salvar Dado</button>
+  </div>
 
   <script>
+    // Exemplo 01
     function teste(n1, n2) {
+      // Function returns the product of n1 and n2
       return n1 * n2;
     }
+    // Function is called.
     console.log(teste(3, 2));
 
+    // Exemplo 02
+    // function myFunction() {
+    //   alert('Hello, World!');
+    // }
+    // myFunction();
 
-    function myFunction() {
-      alert('Hello, World!');
-    }
-    myFunction();
+    // Exemplo 03
+    // function myFunction2(){
+    //   return 'Hello, world!';
+    // }
+    // document.querySelector('div').textContent = myFunction2();
 
-    function myFunction2(){
-      return 'Hello, world!';
+    // Exemplo 04 - com input:
+    const botao = document.querySelector('button');
+    botao.addEventListener('click', exemplo);
+    function exemplo() {
+      const dado = document.querySelector('input').value;
+      console.log(dado);
     }
-    document.querySelector('div').textContent = myFunction2();
+
+
+
+
   </script>
 </body>
 

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Navigation Bar - Exemplo 01</title>
+  <link rel="stylesheet" href="../../estilos/principal.css">
+  <style>
+    .atividade ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .atividade li {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    .atividade li a {
+      background-color: #dddddd;
+      display: block;
+      margin: 0;
+      padding: 8px;
+      text-decoration: none;
+      width: 120px;
+    }
+
+    .atividade li a:hover:not(.ativo) {
+      background-color: black;
+      color: white;
+    }
+
+    .atividade .ativo {
+      background-color: powderblue;
+    }
+
+    /* Exemplo 2 */
+    .exemplo2 {
+      margin: 0;
+      padding: 0;
+      position: relative;
+    }
+
+    .exemplo2 ul {
+      position: fixed;
+      border: 1px solid black;
+      height: 100%;
+      width: 30%;
+    }
+
+    .exemplo2 section {
+      border: 1px solid red;
+      margin-left: 30%;
+    }
+
+  </style>
+</head>
+
+<body>
+  <h1>CSS Navigation Bar - Exemplo 01</h1> 
+
+  <div class="atividade">
+    <ul>
+      <li><a href="default.asp" class="ativo">Home</a></li>
+      <li><a href="news.asp">News</a></li>
+      <li><a href="contact.asp">Contact</a></li>
+      <li><a href="about.asp">About</a></li>
+    </ul>
+  </div>
+</body>
+
+</html>
