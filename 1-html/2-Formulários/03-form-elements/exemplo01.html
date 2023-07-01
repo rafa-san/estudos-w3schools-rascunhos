@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Form Elements - Exemplo</title>
+  <link rel="stylesheet" href="../../estilos/principal.css">
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <h1>HTML Form Elements - Exemplo</h1> 
+  
+  <h2>Select</h2>
+
+  <form>
+    <label for="cars">Choose a car:</label>
+    <select id="cars" name="cars" size="4" multiple>
+      <option value="volvo">Volvo</option>
+      <option value="saab" selected>Saab</option>
+      <option value="fiat">Fiat</option>
+      <option value="audi">Audi</option>
+    </select> 
+    <input type="submit">
+  </form>
+
+
+  <h2>Text area</h2>
+  <form>
+    <textarea name="message" rows="10" cols="30">The cat was playing in the garden.
+    </textarea>
+    <input type="submit">
+    <!-- <button type="button" onclick="alert('Olá, mundo!')">Click Me!</button> -->
+    <button type="button">Click Me!</button>
+  </form>
+
+  <h2>Fieldset</h2>
+
+  <form>
+    <fieldset>
+      <legend>Teste com fieldset</legend>
+      <label for="ifname">First Name:</label>
+      <br>
+      <input type="text" id="ifname" name="fname">
+      <br>
+      <label for="ilname">Last Name:</label>
+      <br>
+      <input type="text" id="ilname" name="lname">
+      <br>
+      <input type="submit">
+    </fieldset>
+  </form>
+
+  <h2>Datalist</h2>
+  <form>
+    <input list="browsers" name="browser">
+    <datalist id="browsers">
+      <option value="Internet Explorer"></option>
+      <option value="Firefox"></option>
+      <option value="Chrome"></option>
+    </datalist>
+    <input type="submit">
+  </form>
+
+
+  <h2>Output</h2>
+
+  <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+    0
+    <input type="range" id="a" name="a" value="50">
+    100 +
+    <input type="number" id="b" name="b" value="50">
+    =
+    <output name="x" for="a b"></output>
+    <br><br>
+    <input type="submit">
+  </form>
+
+  <script>
+    const botao = document.querySelector('button');
+    botao.addEventListener('click', msg);
+
+    function msg() {
+      alert('Olá, Mundo!!!')
+    }
+  </script>
+</body>
+
+</html>
