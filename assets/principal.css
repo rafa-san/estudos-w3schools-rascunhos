@@ -2,8 +2,8 @@
 
 body {
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin: auto;
-  width: 95%;
+  margin: 16px auto;
+  width: 90%;
 }
 
 details {
@@ -26,6 +26,18 @@ summary {
 
 .principal li {
   padding: 6px 4px;
+}
+
+.principal li.concluido::after {
+  content: "  ✅";
+}
+
+.principal li.estudando::after {
+  content: "  🚧";
+}
+
+.principal li.tudo-certo::after {
+  content: "  🏆";
 }
 
 .principal li a {
