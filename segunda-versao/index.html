@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="HTML, CSS, JavaScript, How To">
+  <meta name="description" content="Exercícios e exemplos de programação do site W3Schools">
+  <meta name="author" content="Rafael Santana">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>W3Schools - Home</title>
+  <link rel="stylesheet" href="style/main.css">
+  <link rel="stylesheet" href="style/media-query.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <p>W3Schools</p>
+        <p>Exercícios e Exemplos</p>
+      </a>
+    </div>
+
+    <nav class="menu-horizontal">
+      <ul>
+        <li><a href="1-html/1-introducao-html.html">HTML</a></li>
+        <li><a href="2-css/1-introducao-css.html">CSS</a></li>
+        <li><a href="#">JavaScript</a></li>
+        <li><a href="#">How To</a></li>
+      </ul>
+    </nav>
+
+    <div class="menu-lateral-simbolo">
+      <span class="simbolo" onclick="menu()">&#9776;</span>
+    </div>
+  </header>
+
+  <div id="menu-lateral" class="menu-lateral-responsivo esconder">
+    <div class="menu-lateral-conteudo">
+      <ol>
+        <li class="toggle">
+          <details open>
+            <summary><strong>HTML</strong></summary>
+            <ul>
+              <li><a href="1-html/1-introducao-html.html">Introdução</a></li>
+              <li><a href="1-html/2-headings-e-paragrafos.html">Headings e Parágrafos</a></li>
+              <li><a href="1-html/3-formatacao-1.html">Formatação de Texto - Parte 1</a></li>
+              <li><a href="1-html/4-formatacao-2.html">Formatação de Texto - Parte 2</a></li>
+              <li><a href="#">Computercode</a></li>
+              <li><a href="1-html/6-links.html">Links</a></li>
+              <li><a href="#">Iframes</a></li>
+              <li><a href="#">Imagens</a></li>
+              <li><a href="#">Tabelas</a></li>
+              <li><a href="#">Listas</a></li>
+              <li><a href="#">Formulários</a></li>
+              <li><a href="#">Áudio e Vídeo</a></li>
+            </ul>
+          </details>
+        </li>
+      </ol>
+      <ol>
+        <li class="toggle">
+          <details>
+            <summary><strong>CSS</strong></summary>
+            <ul>
+              <li><a href="2-css/1-introducao-css.html">Introdução</a></li>
+            </ul>
+          </details>
+        </li>
+      </ol>
+    </div>
+  </div>
+
+  <main class="container-index">
+    <div class="materia">
+      <p><span class="numeros">1</span> HTML</p>
+      <p>HTML significa Hyper Text Markup Language. É uma linguagem de marcação usada para construir e estruturar páginas web.</p>
+      <a href="1-html/1-introducao-html.html">Conhecer</a>
+    </div>
+    <div class="materia">
+      <p><span class="numeros">2</span> CSS</p>
+      <p>CSS significa Cascading Style Sheets. É a linguagem usada para estilizar páginas web e determinar como os elementos da página serão dispostos.</p>
+      <a href="2-css/1-introducao-css.html">Conhecer</a>
+    </div>
+    <div class="materia">
+      <p><span class="numeros">3</span> JavaScript</p>
+      <p>JavaScript é uma linguagem de programação que pode ser usada para tornar uma página web mais interativa.</p>
+      <a href="3-javascript/1-introducao-javascript.html">Conhecer</a>
+    </div>
+    <div class="materia">
+      <p><span class="numeros">4</span> How To</p>
+      <p>Exemplos, exemplos e mais exemplos do que é possível fazer com HTML, CSS e JavaScript.</p>
+      <a href="#">Conhecer</a>
+    </div>
+  </main>
+
+  <footer>
+    Desenvolvido por: Rafa Santana
+  </footer>
+
+  <script src="https://kit.fontawesome.com/9f46c28665.js" crossorigin="anonymous"></script>
+  <script src="scripts/menu-responsivo.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) {
+  .menu-horizontal {
+    display: block;
+  }
+
+  .menu-lateral-simbolo {
+    display: none;
+  }
+
+  .menu-lateral-responsivo {
+    width: 200px;
+  }
+
+  .esconder {
+    width: 0;
+  }
+
+  .container-principal {
+    margin-left: 235px;
+    max-width: 80%;
+  }
+
+  .codigo-e-navegador {
+    flex-direction: row;
+  }
+
+  .codigo, .navegador {
+    flex: 50%;
+    margin: 0 8px;
+  }
+}

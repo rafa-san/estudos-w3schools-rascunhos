@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="HTML, CSS, JavaScript, How To">
+  <meta name="description" content="Exercícios e exemplos de programação do site W3Schools">
+  <meta name="author" content="Rafael Santana">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML - Introdução</title>
+  <link rel="stylesheet" href="../style/main.css">
+  <link rel="stylesheet" href="../style/media-query.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <a href="../index.html">
+        <p>W3Schools</p>
+        <p>Exercícios e Exemplos</p>
+      </a>
+    </div>
+
+    <nav class="menu-horizontal">
+      <ul>
+        <li><a href="#">HTML</a></li>
+        <li><a href="../2-css/1-introducao-css.html">CSS</a></li>
+        <li><a href="#">JavaScript</a></li>
+        <li><a href="#">How To</a></li>
+      </ul>
+    </nav>
+
+    <div class="menu-lateral-simbolo">
+      <span class="simbolo" onclick="menu()">&#9776;</span>
+    </div>
+  </header>
+
+  <div id="menu-lateral" class="menu-lateral-responsivo">
+    <div class="menu-lateral-conteudo">
+      <ol>
+        <li class="toggle">
+          <details open>
+            <summary><strong>HTML</strong></summary>
+            <ul>
+              <li><a href="1-introducao-html.html">Introdução</a></li>
+              <li><a href="2-headings-e-paragrafos.html">Headings e Parágrafos</a></li>
+              <li><a href="3-formatacao-1.html">Formatação de Texto - Parte 1</a></li>
+              <li><a href="4-formatacao-2.html">Formatação de Texto - Parte 2</a></li>
+              <li><a href="#">Computercode</a></li>
+              <li><a href="6-links.html">Links</a></li>
+              <li><a href="#">Iframes</a></li>
+              <li><a href="#">Imagens</a></li>
+              <li><a href="#">Tabelas</a></li>
+              <li><a href="#">Listas</a></li>
+              <li><a href="#">Formulários</a></li>
+              <li><a href="#">Áudio e Vídeo</a></li>
+            </ul>
+          </details>
+        </li>
+      </ol>
+      <ol>
+        <li class="toggle">
+          <details open>
+            <summary><strong>CSS</strong></summary>
+            <ul>
+              <li><a href="../2-css/1-introducao-css.html" class="link-ativo">Introdução</a></li>
+            </ul>
+          </details>
+        </li>
+      </ol>
+    </div>
+  </div>
+
+  <main class="container-principal">
+    <h1>Introdução</h1>
+
+    <section class="container-assunto">
+      <h2>Estrutura Básica de um Documento HTML</h2>
+      <div class="assunto-detalhes">
+        <div class="codigo-e-navegador">
+          <div class="codigo">
+            <h3>Código</h3>
+            <div class="codigo-conteudo">
+              <span class="branco">&lt;</span>!DOCTYPE <span class="roxo">html</span><span class="branco">&gt;</span><br>
+              <span class="branco">&lt;</span>html<span><span class="branco">&gt;</span></span><br>
+              <span class="branco">&lt;</span>head<span class="branco">&gt;</span><br>
+              <span class="branco">&lt;</span>title<span class="branco">&gt;Título da Página</span><span class="branco">&lt;/</span>title<span class="branco">&gt;</span><br>
+              <span class="branco">&lt;/</span>head<span class="branco">&gt;</span><br>
+              <span class="branco">&lt;</span>body<span class="branco">&gt;</span><br>
+              <span class="branco">&lt;</span>p<span class="branco">&gt;</span><span class="branco">Hello, world!</span><span class="branco">&lt;/</span>p<span class="branco">&gt;</span><br>
+              <span class="branco">&lt;/</span>body<span class="branco">&gt;</span><br>
+              <span class="branco">&lt;/</span>html<span class="branco">&gt;</span><br>
+            </div>
+          </div>
+          <div class="navegador">
+            <h3>Navegador</h3>
+            <div class="navegador-conteudo">
+              <p>Hello, world!</p>
+            </div>
+          </div>
+        </div>
+
+        <ol>
+          <li>A declaração <span class="destaque"><span class="branco">&lt;</span>!DOCTYPE <span class="roxo">html</span><span class="branco">&gt;</span></span> define que este é um documento HTML5. Isso ajuda o navegador a exibir o conteúdo da página web corretamente.</li>
+          <li>O elemento <span class="destaque"><span class="branco">&lt;</span>html<span class="branco">&gt;</span> <span class="branco">&lt;/</span>html<span class="branco">&gt;</span></span> é o elemento raiz de uma página HTML.
+          </li>
+          <li>O elemento <span class="destaque"><span class="branco">&lt;</span>head<span class="branco">&gt;</span> <span class="branco">&lt;/</span>head<span class="branco">&gt;</span></span> contém meta informações sobre a página HTML.</li>
+          <li>O elemento <span class="destaque"><span class="branco">&lt;</span>title<span class="branco">&gt;</span> <span class="branco">&lt;/</span>title<span class="branco">&gt;</span></span> define o título da página HTML, que é mostrado na barra de título do navegador ou na guia da página.</li>
+          <li>O elemento <span class="destaque"><span class="branco">&lt;</span>body<span class="branco">&gt;</span> <span class="branco">&lt;/</span>body<span class="branco">&gt;</span></span> define o corpo do documento e serve como um container para todos os conteúdos visíveis, como títulos, parágrafos, imagens, hiperlinks, tabelas, listas, etc.</li>
+          <li>O elemento <span class="destaque"><span class="branco">&lt;</span>p<span class="branco">&gt;</span> <span class="branco">&lt;/</span>p<span class="branco">&gt;</span></span> define um parágrafo.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="container-assunto">
+      <h2>Elementos HTML</h2>
+      <div class="assunto-detalhes">
+        <p>Elemento HTML é uma declaração composta por: tag de abertura, conteúdo e tag de fechamento.</p>
+        <p><strong>Exemplo:</strong></p>
+        <div class="exemplo">
+          <p class="destaque"><span class="branco">&lt;</span>p<span class="branco">&gt;</span><span class="branco">Hello, World!</span><span class="branco">&lt;/</span>p<span class="branco">&gt;</span></p>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="container-assunto">
+      <h2>Elementos HTML vazios</h2>
+      <div class="assunto-detalhes">
+        <p>Em alguns casos, o elemento HTML não possui conteúdo e nem a tag de fechamento.</p>
+        <p><strong>Exemplo:</strong></p>
+        <div class="exemplo">
+          <p class="destaque"><span class="branco">&lt;</span>br<span><span class="branco">&gt;</span></span> <span class="cinza">&lt;!-- Quebra de Linha --&gt;</p>
+          <p class="destaque"><span class="branco">&lt;</span>hr<span><span class="branco">&gt;</span></span> <span class="cinza">&lt;!-- Linha Horizontal --&gt;</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-assunto">
+      <h2>Atributos HTML</h2>
+      <div class="assunto-detalhes">
+        <p>Os atributos HTML fornecem informações adicionais sobre um elemento HTML.</p>
+        <p>Todos os elementos HTML podem ter atributos e eles são sempre especificados na tag inicial.</p>
+        <p><strong>Exemplo:</strong></p>
+        <div class="exemplo">
+          <p class="destaque"><span class="branco">&lt;</span>a <span class="verde">href</span>=<span class="amarelo">"https://www.w3schools.com"</span><span class="branco">></span><span class="branco">Visit W3Schools</span><span class="branco">&lt;/</span>a<span class="branco">&gt;</span></p>
+        </div>
+        <p>A tag <span class="destaque"><span class="branco">&lt;</span>a<span class="branco">&gt;</span></span> representa um hyperlink. O atributo <span class="destaque"><span class="verde">href</span></span> especifica a URL para a qual o link será direcionado.</p>
+      </div>
+    </section>
+
+    <section class="container-assunto">
+      <h2>Comentários em HTML</h2>
+      <div class="assunto-detalhes">
+        <p>Comentários não são exibidos no navegador, mas podem ajudar a organizar e documentar seu código-fonte, ao incluir notas, explicações ou lembretes.</p>
+        <p>Você adiciona um comentário ao seu código HTML da seguinte maneira: </p>
+        <p><strong>Exemplo:</strong></p>
+        <div class="exemplo">
+          <p class="destaque"><span class="cinza">&lt;!-- O comentário vai aqui --&gt;</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Desenvolvido por: Rafa Santana
+  </footer>
+
+  <script src="https://kit.fontawesome.com/9f46c28665.js" crossorigin="anonymous"></script>
+  <script src="../scripts/menu-responsivo.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="HTML, CSS, JavaScript, How To">
+  <meta name="description" content="Exercícios e exemplos de programação do site W3Schools">
+  <meta name="author" content="Rafael Santana">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML - Links</title>
+  <link rel="stylesheet" href="../style/main.css">
+  <link rel="stylesheet" href="../style/media-query.css">
+  <style>
+    .container-assunto {
+      background-color: #faf8f5;
+      border: 1px solid #efece9;
+      color: #555554;
+    }
+
+    .container-assunto h1 {
+      font-size: 2em;
+      margin: 0.67em 0;
+    }
+
+    .container-assunto h2 {
+      font-size: 1.5em;
+      margin: 0.83em 0;
+    }
+
+    .container-assunto h3 {
+      font-size: 1.17em;
+      margin: 1em 0;
+    }
+
+    .container-assunto p {
+      line-height: 2;
+    }
+
+    .container-assunto a {
+      color: black;
+      text-decoration: none;
+    }
+
+    .container-assunto a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <a href="../index.html">
+        <p>W3Schools</p>
+        <p>Exercícios e Exemplos</p>
+      </a>
+    </div>
+
+    <nav class="menu-horizontal">
+      <ul>
+        <li><a href="1-introducao-html.html">HTML</a></li>
+        <li><a href="../2-css/1-introducao-css.html">CSS</a></li>
+        <li><a href="#">JavaScript</a></li>
+        <li><a href="#">How To</a></li>
+      </ul>
+    </nav>
+
+    <div class="menu-lateral-simbolo">
+      <span class="simbolo" onclick="menu()">&#9776;</span>
+    </div>
+  </header>
+
+  <div id="menu-lateral" class="menu-lateral-responsivo">
+    <div class="menu-lateral-conteudo">
+      <ol>
+        <li class="toggle">
+          <details open>
+            <summary><strong>HTML</strong></summary>
+            <ul>
+              <li><a href="1-introducao-html.html">Introdução</a></li>
+              <li><a href="2-headings-e-paragrafos.html">Headings e Parágrafos</a></li>
+              <li><a href="3-formatacao-1.html">Formatação de Texto - Parte 1</a></li>
+              <li><a href="4-formatacao-2.html">Formatação de Texto - Parte 2</a></li>
+              <li><a href="#">Computercode</a></li>
+              <li><a href="6-links.html">Links</a></li>
+              <li><a href="#">Iframes</a></li>
+              <li><a href="#">Imagens</a></li>
+              <li><a href="#">Tabelas</a></li>
+              <li><a href="#">Listas</a></li>
+              <li><a href="#">Formulários</a></li>
+              <li><a href="#">Áudio e Vídeo</a></li>
+            </ul>
+          </details>
+        </li>
+      </ol>
+      <ol>
+        <li class="toggle">
+          <details open>
+            <summary><strong>CSS</strong></summary>
+            <ul>
+              <li><a href="../2-css/1-introducao-css.html" class="link-ativo">Introdução</a></li>
+            </ul>
+          </details>
+        </li>
+      </ol>
+    </div>
+  </div>
+
+  <main class="container-principal">
+    <h1>Links</h1>
+      
+    <section class="container-assunto"> 
+      <h2>Melhores Sites para Aprender a Programar</h2>
+      <p>Na minha opinião, os melhores sites para aprender <abbr title="Hyper Text Markup Language"><strong>HTML</strong></abbr>, <abbr title="Cascading Style Sheets"><strong>CSS</strong></abbr> e <strong>JavaScript</strong> são esses aqui:</p>
+      <a href="https://www.cursoemvideo.com/" target="_blank" title="Visite o site Curso em Vídeo">Curso em Vídeo</a> <br>
+      <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web" target="_blank" title="Visite o site Mozilla MDN">Mozilla MDN</a> <br> 
+      <a href="https://www.w3schools.com/" target="_blank" title="Visite o site W3Schools">W3Schools</a>
+      <p>São sites muito didáticos que fornecem inúmeros exemplos e exercícios para que você possa praticar bastante e assimilar o conhecimento. Os três possuem conteúdo de qualidade e gratuito, vale a pena conhecer!</p>
+    </section>
+
+    <h2>Tags utilizadas no exemplo acima</h2>
+    <p><em>em ordem alfabética</em></p>
+    <section class="tags-utilizadas">
+      <div>&lt;a&gt;</div>
+      <div>&lt;abbr&gt;</div>
+      <div>&lt;h2&gt;</div>
+      <div>&lt;p&gt;</div>
+      <div>&lt;strong&gt;</div>
+    </section>
+
+  </main>
+
+  <footer>
+    Desenvolvido por: Rafa Santana
+  </footer>
+
+  <script src="https://kit.fontawesome.com/9f46c28665.js" crossorigin="anonymous"></script>
+  <script src="../scripts/menu-responsivo.js"></script>
+</body>
+
+</html>

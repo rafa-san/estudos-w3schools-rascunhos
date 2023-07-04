@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="HTML, CSS, JavaScript, How To">
+  <meta name="description" content="Exercícios e exemplos de programação do site W3Schools">
+  <meta name="author" content="Rafael Santana">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML - Formatação de Texto - Parte 1</title>
+  <link rel="stylesheet" href="../style/main.css">
+  <link rel="stylesheet" href="../style/media-query.css">
+  <style>
+    .container-assunto {
+      background-color: #faf8f5;
+      border: 1px solid #efece9;
+      color: #555554;
+    }
+
+    .container-assunto h1 {
+      font-size: 2em;
+      margin: 0.67em 0;
+    }
+
+    .container-assunto h2 {
+      font-size: 1.5em;
+      margin: 0.83em 0;
+    }
+
+    .container-assunto h3 {
+      font-size: 1.17em;
+      margin: 1em 0;
+    }
+
+    .container-assunto p {
+      line-height: 2;
+    }
+
+    pre {
+      white-space: pre-line;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <a href="../index.html">
+        <p>W3Schools</p>
+        <p>Exercícios e Exemplos</p>
+      </a>
+    </div>
+
+    <nav class="menu-horizontal">
+      <ul>
+        <li><a href="1-introducao-html.html">HTML</a></li>
+        <li><a href="../2-css/1-introducao-css.html">CSS</a></li>
+        <li><a href="#">JavaScript</a></li>
+        <li><a href="#">How To</a></li>
+      </ul>
+    </nav>
+
+    <div class="menu-lateral-simbolo">
+      <span class="simbolo" onclick="menu()">&#9776;</span>
+    </div>
+  </header>
+
+  <div id="menu-lateral" class="menu-lateral-responsivo">
+    <div class="menu-lateral-conteudo">
+      <ol>
+        <li class="toggle">
+          <details open>
+            <summary><strong>HTML</strong></summary>
+            <ul>
+              <li><a href="1-introducao-html.html">Introdução</a></li>
+              <li><a href="2-headings-e-paragrafos.html">Headings e Parágrafos</a></li>
+              <li><a href="3-formatacao-1.html">Formatação de Texto - Parte 1</a></li>
+              <li><a href="4-formatacao-2.html">Formatação de Texto - Parte 2</a></li>
+              <li><a href="#">Computercode</a></li>
+              <li><a href="6-links.html">Links</a></li>
+              <li><a href="#">Iframes</a></li>
+              <li><a href="#">Imagens</a></li>
+              <li><a href="#">Tabelas</a></li>
+              <li><a href="#">Listas</a></li>
+              <li><a href="#">Formulários</a></li>
+              <li><a href="#">Áudio e Vídeo</a></li>
+            </ul>
+          </details>
+        </li>
+      </ol>
+      <ol>
+        <li class="toggle">
+          <details open>
+            <summary><strong>CSS</strong></summary>
+            <ul>
+              <li><a href="../2-css/1-introducao-css.html" class="link-ativo">Introdução</a></li>
+            </ul>
+          </details>
+        </li>
+      </ol>
+    </div>
+  </div>
+
+  <main class="container-principal">
+    <h1>Formatação de Texto - Parte 1</h1>
+      
+    <section class="container-assunto">  
+      <h2>Poeminho do Contra</h2>
+      <p><em>por Mario Quintana</em></p>
+      <pre>
+        Todos esses que aí estão
+        Atravancando meu caminho,
+        Eles passarão...
+        Eu passarinho!
+      </pre>
+      <hr>
+      <small>Mario Quintana (1906 - 1994) foi um poeta, tradutor e jornalista brasileiro.</small>
+    </section>
+
+    <section class="container-assunto">
+      <h2>Potenciação</h2>
+      <p><strong>Potenciação</strong> é uma operação matemática onde um valor chamado base é <strong>multiplicado</strong> por ele mesmo a quantidade de vezes indicada pelo <strong>expoente</strong>.</p>
+      <p>Os termos da potenciação são:</p>
+      <p><mark>base</mark><sup><mark>expoente</mark></sup> = <mark>potência</mark></p>
+      <p>
+        Exemplo:<br>
+        2<sup>3</sup> = 2.2.2 = 8 <br>
+        ou <br>
+        2<sup>3</sup> = 8
+      </p>
+      <p>
+        A <mark>base</mark> é o 2, é o <strong>fator</strong> que será <strong>multiplicado</strong>. <br>
+        O <mark>expoente</mark> é o 3, é a quantidade de vezes que o 2 será <strong>multiplicado</strong> por ele mesmo.
+      </p>
+    </section>
+
+    <section class="container-assunto">
+      <h2>Composição Química do Petróleo</h2>
+      <p>O petróleo é uma substância natural formada por, especialmente, hidrocarbonetos.</p>
+      <p>Alguns dos hidrocarbonetos encontrados em sua composição são: metano (CH<sub>4</sub>), butano (C<sub>4</sub>H<sub>10</sub>) e octano (C<sub>8</sub>H<sub>18</sub>)</p>
+    </section>
+
+    <section class="container-assunto">
+      <h2>INSTRUÇÃO NORMATIVA RFB Nº 1571, DE 02 DE JULHO DE 2015</h2>
+        <p>Art. 1º Esta Instrução Normativa disciplina a obrigatoriedade de prestação de informações relativas às operações financeiras de interesse da Secretaria da Receita Federal
+          do Brasil (RFB).
+          </p>
+      <h3>CAPÍTULO I</h3>
+      <h4>DAS DISPOSIÇÕES GERAIS</h4>
+      <p><del>Art. 2º As informações serão prestadas mediante apresentação da e-Financeira, constituída por um conjunto de arquivos digitais referentes a cadastro, abertura, fechamento e auxiliares, e pelo módulo de operações financeiras.</del></p>
+      <p><ins>Art. 2º As informações serão prestadas mediante apresentação da e-Financeira, constituída por um conjunto de arquivos digitais referentes a cadastro, abertura, fechamento e auxiliares, e pelos módulos de operações financeiras e de previdência privada. (Redação dada pelo(a) Instrução Normativa RFB nº 1835, de 03 de outubro de 2018).</ins></p>
+    </section>
+
+    <h2>Tags utilizadas nos exemplos acima</h2>
+    <p><em>em ordem alfábetica</em></p>
+    <section class="tags-utilizadas">
+      <div><code>&lt;br&gt;</code></div>
+      <div><code>&lt;del&gt;</code></div>
+      <div><code>&lt;em&gt;</code></div>
+      <div><code>&lt;h1&gt;</code></div>
+      <div><code>&lt;h2&gt;</code></div>
+      <div><code>&lt;h3&gt;</code></div>
+      <div><code>&lt;hr&gt;</code></div>
+      <div><code>&lt;ins&gt;</code></div>
+      <div><code>&lt;mark&gt;</code></div>
+      <div><code>&lt;p&gt;</code></div>
+      <div><code>&lt;pre&gt;</code></div>
+      <div><code>&lt;small&gt;</code></div>
+      <div><code>&lt;strong&gt;</code></div>
+      <div><code>&lt;sub&gt;</code></div>
+      <div><code>&lt;sup&gt;</code></div>
+    </section>
+  </main>
+
+  <footer>
+    Desenvolvido por: Rafa Santana
+  </footer>
+
+  <script src="https://kit.fontawesome.com/9f46c28665.js" crossorigin="anonymous"></script>
+  <script src="../scripts/menu-responsivo.js"></script>
+</body>
+
+</html>

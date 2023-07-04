@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="HTML, CSS, JavaScript, How To">
+  <meta name="description" content="Exercícios e exemplos de programação do site W3Schools">
+  <meta name="author" content="Rafael Santana">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML - Formatação de Texto - Parte 2</title>
+  <link rel="stylesheet" href="../style/main.css">
+  <link rel="stylesheet" href="../style/media-query.css">
+  <style>
+    .container-assunto {
+      background-color: #faf8f5;
+      border: 1px solid #efece9;
+      color: #555554;
+    }
+
+    .container-assunto h1 {
+      font-size: 2em;
+      margin: 0.67em 0;
+    }
+
+    .container-assunto h2 {
+      font-size: 1.5em;
+      margin: 0.83em 0;
+    }
+
+    .container-assunto h3 {
+      font-size: 1.17em;
+      margin: 1em 0;
+    }
+
+    .container-assunto p {
+      line-height: 2;
+    }
+
+    blockquote {
+      display: block;
+      margin-left: 40px;
+      margin-right: 40px;
+      margin-top: 1em;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <a href="../index.html">
+        <p>W3Schools</p>
+        <p>Exercícios e Exemplos</p>
+      </a>
+    </div>
+
+    <nav class="menu-horizontal">
+      <ul>
+        <li><a href="1-introducao-html.html">HTML</a></li>
+        <li><a href="../2-css/1-introducao-css.html">CSS</a></li>
+        <li><a href="#">JavaScript</a></li>
+        <li><a href="#">How To</a></li>
+      </ul>
+    </nav>
+
+    <div class="menu-lateral-simbolo">
+      <span class="simbolo" onclick="menu()">&#9776;</span>
+    </div>
+  </header>
+
+  <div id="menu-lateral" class="menu-lateral-responsivo">
+    <div class="menu-lateral-conteudo">
+      <ol>
+        <li class="toggle">
+          <details open>
+            <summary><strong>HTML</strong></summary>
+            <ul>
+              <li><a href="1-introducao-html.html">Introdução</a></li>
+              <li><a href="2-headings-e-paragrafos.html">Headings e Parágrafos</a></li>
+              <li><a href="3-formatacao-1.html">Formatação de Texto - Parte 1</a></li>
+              <li><a href="4-formatacao-2.html">Formatação de Texto - Parte 2</a></li>
+              <li><a href="#">Computercode</a></li>
+              <li><a href="6-links.html">Links</a></li>
+              <li><a href="#">Iframes</a></li>
+              <li><a href="#">Imagens</a></li>
+              <li><a href="#">Tabelas</a></li>
+              <li><a href="#">Listas</a></li>
+              <li><a href="#">Formulários</a></li>
+              <li><a href="#">Áudio e Vídeo</a></li>
+            </ul>
+          </details>
+        </li>
+      </ol>
+      <ol>
+        <li class="toggle">
+          <details open>
+            <summary><strong>CSS</strong></summary>
+            <ul>
+              <li><a href="../2-css/1-introducao-css.html" class="link-ativo">Introdução</a></li>
+            </ul>
+          </details>
+        </li>
+      </ol>
+    </div>
+  </div>
+
+  <main class="container-principal">
+    <h1>Formatação de Texto - Parte 2</h1>
+      
+    <section class="container-assunto">
+      <h2>Literatura Grega</h2>
+      <p>Acredita-se que os livros <cite>Ilíada</cite> e <cite>Odisseia</cite> foram escritos por um único poeta, a quem chamavam de Homero.</p>
+      <p>Sobre a <cite>Ilíada</cite>, segue abaixo a apresentação de uma edição publicada pela <strong>Companhia das Letras</strong>:</p>
+      <blockquote cite="https://www.companhiadasletras.com.br/livro/9788563560568/iliada">
+        Primeiro livro da literatura ocidental, a Ilíada parece se tratar, pelo título, apenas de um breve incidente ocorrido no cerco dos gregos à cidade troiana de Ílion, a crônica de aproximadamente cinquenta dias de uma guerra que durou dez anos. No entanto, graças à maestria de seu autor, essa janela no tempo se abre para paisagens vastíssimas, repletas de personagens e eventos que ficariam marcados para sempre no imaginário ocidental. É nesse épico homérico que surgem figuras como Páris, Helena, Heitor, Ulisses, Aquiles e Agamêmnon, e em seus versos somos transportados diretamente para a intimidade dos deuses, com suas relações familiares complexas e às vezes cômicas.
+      </blockquote>
+    </section>
+
+    <section class="container-assunto">
+      <h2>Frase do Dia</h2>
+      <q>Olha maninho, o essencial é fazermo-nos hábeis, e não úteis.</q>
+      <p>-Mario Quintana</p>
+    </section>
+
+    <section class="container-assunto">
+      <h2>Através do Espelho e o que Alice Encontrou Lá</h2>
+      <p>
+      " ... <br>
+      Havia um livro em cima da mesa perto de Alice, e enquanto observava o Rei Branco (pois estava ainda um tanto temerosa de que ele desmaiasse outra vez e conservara sempre à mão o tinteiro para essa eventualidade), folheou-o um pouco, procurando algo que pudesse ler, "pois está escrito em alguma língua que não conheço", dizia para si mesma.</p>
+      <p>Era qualquer coisa assim:</p>
+      <pre>
+      <bdo dir="rtl"> 
+      JAGUADARTE
+
+      Era briluz. As lesmolisas touvas
+          Roldavam e relviam nos gramilvos.
+      Estavam mimsicais as pintalouvas
+          E os momirratos davam grilvos.</bdo>
+      </pre>
+      <p>Contemplou intrigada essas linhas durante algum tempo, até que uma ideia luminosa lhe ocorreu: "É claro, só pode ser, é um livro do Espelho! Se eu colocá-lo diante do espelho as palavras vão ficar na ordem certa outra vez."</p>
+      <p>E foi este o poema que Alice leu:</p>
+      <pre>
+      JAGUADARTE
+
+      Era briluz. As lesmolisas touvas
+          Roldavam e relviam nos gramilvos.
+      Estavam mimsicais as pintalouvas
+          E os momirratos davam grilvos.
+      </pre>
+      <hr>
+      <small>Trecho retirado das páginas 26 e 27 do livro <cite>Através do Espelho e o que Alice Encontrou Lá</cite>, da <strong>editora 34</strong> e tradução de <strong>Sebastião Uchoa Leite</strong>.</small>
+    </section>
+    
+    <h2>Tags utilizadas nos exemplos acima</h2>
+    <p><em>em ordem alfabética</em></p>
+    <section class="tags-utilizadas">
+      <div>&lt;bdo&gt;</div>
+      <div>&lt;blockquote&gt;</div>
+      <div>&lt;br&gt;</div>
+      <div>&lt;cite&gt;</div>
+      <div>&lt;h2&gt;</div>
+      <div>&lt;hr&gt;</div>
+      <div>&lt;p&gt;</div>
+      <div>&lt;pre&gt;</div>
+      <div>&lt;q&gt;</div>
+      <div>&lt;small&gt;</div>
+      <div>&lt;strong&gt;</div>
+    </section>
+  </main>
+
+  <footer>
+    Desenvolvido por: Rafa Santana
+  </footer>
+
+  <script src="https://kit.fontawesome.com/9f46c28665.js" crossorigin="anonymous"></script>
+  <script src="../scripts/menu-responsivo.js"></script>
+</body>
+
+</html>
