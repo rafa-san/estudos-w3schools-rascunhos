@@ -1,240 +1,79 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
+  <meta name="keywords" content="HTML">
+  <meta name="description" content="Exercícios e exemplos de programação do site W3Schools">
+  <meta name="author" content="Rafael Santana">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Página Inicial</title>
-  <link rel="stylesheet" href="assets/principal.css">
+  <title>W3Schools - Home</title>
+  <link rel="stylesheet" href="style/main.css">
+  <link rel="stylesheet" href="style/media-query.css">
 </head>
 
 <body>
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <p>W3Schools</p>
+        <p>Exercícios e Exemplos</p>
+      </a>
+    </div>
 
-  <h1>1-tutorial de HTML</h1>
+    <nav class="menu-horizontal">
+      <ul>
+        <li><a href="1-html/1-introducao-html.html">HTML</a></li>
+        <li><a href="#">Lorem</a></li>
+        <li><a href="#">Lorem</a></li>
+      </ul>
+    </nav>
 
-  <div class="principal">
-    <h2>Sumário</h2>
-    <details>
-      <summary>HTML</summary>
+    <div class="menu-lateral-simbolo">
+      <span class="simbolo" onclick="menu()">&#9776;</span>
+    </div>
+  </header>
+
+  <div id="menu-lateral" class="menu-lateral-responsivo esconder">
+    <div class="menu-lateral-conteudo">
       <ol>
-        <li class="concluido">Home</li>
-        <li class="concluido">Introduction</li>
-        <li class="concluido">Editors</li>
-        <li class="concluido">Basic</li>
-        <li class="concluido">Elements</li>
-        <li class="concluido">Attributes</li>
-        <li>
-          Headings   ✅
-          <ul>
-            <li><a href="1-tutorial/07-headings/exemplo.html">Exemplo</a></li>
-            <li><a href="1-tutorial/07-headings/exercicios.html">Exercícios</a></li>
-          </ul>
+        <li class="toggle">
+          <details open>
+            <summary><strong>HTML</strong></summary>
+            <ul>
+              <li><a href="1-html/1-introducao-html.html">Introdução</a></li>
+              <li><a href="1-html/2-headings-e-paragrafos.html">Headings e Parágrafos</a></li>
+              <li><a href="1-html/3-formatacao-1.html">Formatação de Texto - Parte 1</a></li>
+              <li><a href="1-html/4-formatacao-2.html">Formatação de Texto - Parte 2</a></li>
+              <!-- <li><a href="#">Computercode</a></li>
+              <li><a href="1-html/6-links.html">Links</a></li>
+              <li><a href="#">Iframes</a></li>
+              <li><a href="#">Imagens</a></li>
+              <li><a href="#">Tabelas</a></li>
+              <li><a href="#">Listas</a></li>
+              <li><a href="#">Formulários</a></li>
+              <li><a href="#">Áudio e Vídeo</a></li> -->
+            </ul>
+          </details>
         </li>
-        <li>
-          Paragraphs   ✅
-          <ul>
-            <li><a href="1-tutorial/08-paragraphs/exemplo.html">Exemplo</a></li>
-          </ul>
-        </li>
-        <li class="concluido">Styles</li>
-        <li>
-          Formatting   ✅
-          <ul>
-            <li><a href="1-tutorial/10-formatting/exemplo.html">Exemplo</a></li>
-            <li><a href="1-tutorial/10-formatting/exercicios.html">Exercícios</a></li>
-          </ul>
-        </li>
-        <li>
-          Quotations   ✅
-          <ul>
-            <li><a href="1-tutorial/11-quotations/exemplo.html">Exemplo</a></li>
-            <li><a href="1-tutorial/11-quotations/exercicios.html">Exercícios</a></li>
-          </ul>
-        </li>
-        <li class="concluido">Comments</li>
-        <li>
-          Colors   ✅
-          <ul>
-            <li>RGB</li>
-            <li>HEX</li>
-            <li>HSL</li>
-          </ul>
-        </li>
-        <li class="concluido">CSS</li>
-        <li>
-          Links   ✅
-          <ul>
-            <li>Colors</li>
-            <li>Bookmarks</li>
-            <li><a href="1-tutorial/15-links/exercicios.html">Exercícios</a></li>
-          </ul>
-        </li>
-        <li>
-          Images   ✅
-          <ul>
-            <li>Image Map</li>
-            <li>Background Images</li>
-            <li>The Picture Element</li>
-            <li>
-              <a href="1-tutorial/16-images/exemplo01.html">Exemplo 01</a> | 
-              <a href="1-tutorial/16-images/exemplo02.html">Exemplo 02</a>
-            </li>
-            <li><a href="1-tutorial/16-images/exercicios.html">Exercícios</a></li>
-          </ul>
-        </li>
-        <li class="concluido">Favicon</li>
-        <li class="concluido">Page Title</li>
-        <li>
-          Tables   ✅
-          <ul>
-            <li>Borders</li>
-            <li>Sizes</li>
-            <li>Headers</li>
-            <li>Padding & Spacing</li>
-            <li>Colspan & Rowspan</li>
-            <li>Styling</li>
-            <li>Colgroup</li>
-            <li><a href="1-tutorial/19-tables/exemplo.html">Exemplo</a></li>
-            <li><a href="1-tutorial/19-tables/exercicios.html">Exercícios</a></li>
-          </ul>
-        </li>
-        <li>
-          Lists   ✅
-          <ul>
-            <li><a href="1-tutorial/20-lists/exercicios.html">Exercícios</a></li>
-          </ul>
-        </li>
-        <li>
-          Block & Inline   ✅
-          <ul>
-            <li><a href="1-tutorial/21-block-inline/exemplo.html">Exemplo</a></li>
-          </ul>
-        </li>
-        <li class="concluido">Classes</li>
-        <li class="concluido">Id</li>
-        <li>
-          Iframes   ✅
-          <ul>
-            <li><a href="1-tutorial/24-iframes/exercicios.html">Exercícios</a></li>
-          </ul>
-        </li>
-        <li class="concluido">JavaScript</li>
-        <li class="concluido">File Paths</li>
-        <li class="concluido">Head</li>
-        <li class="concluido">Layout</li>
-        <li class="concluido">Responsive</li>
-        <li>
-          Computer Code   ✅
-          <ul>
-            <li><a href="1-tutorial/30-computercode/exercicios.html">Exercícios</a></li>
-          </ul>
-        </li>
-        <li class="concluido">Semantics</li>
-        <li class="concluido">Style Guide</li>
-        <li class="concluido">Entities</li>
-        <li class="concluido">Symbols</li>
-        <li class="concluido">Emojis</li>
-        <li class="concluido">Charset</li>
-        <li class="concluido">URL Encode</li>
-        <li class="concluido">HTML vs. XHTML</li>
       </ol>
-    </details>
-
-    <details open>
-      <summary>FORMS</summary>
-      <ol>
-        <li>
-          Forms
-          <ul>
-            <li><a href="2-forms/01-forms/exemplo.html">Exemplo</a></li>
-          </ul>
-        </li>
-        <li>Form Attributes</li>
-        <li>
-          Form Elements
-          <ul>
-            <li><a href="2-forms/03-form-elements/anotacoes.html">Anotações</a></li>
-            <li><a href="2-forms/03-form-elements/exemplo01.html">Exemplo</a></li>
-          </ul>
-        </li>
-        <li>
-          Input Types
-          <ul>
-            <li><a href="2-forms/04-input-types/exemplo01.html">Exemplo</a></li>
-          </ul>
-        </li>
-        <li>Input Attributes</li>
-        <li>Input Form Attributes</li>
-      </ol>
-    </details>
-
-    <details open>
-      <summary>GRAPHICS</summary>
-      <ol>
-        <li>Canvas</li>
-        <li>SVG</li>
-      </ol>
-    </details>
-
-    <details open>
-      <summary>MEDIA</summary>
-      <ol>
-        <li>Media</li>
-        <li>Video</li>
-        <li>Audio</li>
-        <li>Plug-ins</li>
-        <li>YouTube</li>
-      </ol>
-    </details>
-
-    <details open>
-      <summary>APIs</summary>
-      <ol>
-        <li>Geolocation</li>
-        <li>Drag/Drop</li>
-        <li>Web Storage</li>
-        <li>Web Workers</li>
-        <li>SSE</li>
-      </ol>
-    </details>
-
-    <details open>
-      <summary>EXAMPLES</summary>
-      <ol>
-        <li>Examples</li>
-        <li>Editor</li>
-        <li>Quiz</li>
-        <li class="tudo-certo">Exercises</li>
-        <li>Bootcamp</li>
-        <li>Certificate</li>
-        <li>Summary</li>
-        <li>Accessibility</li>
-      </ol>
-    </details>
-
-    <details open>
-      <summary>REFERENCES</summary>
-      <ol>
-        <li>Tag List</li>
-        <li>Attributes</li>
-        <li>Global Attributes</li>
-        <li>Browser Suport</li>
-        <li>Events</li>
-        <li>Colors</li>
-        <li>Canvas</li>
-        <li>Audio/Video</li>
-        <li>Doctypes</li>
-        <li>Character Sets</li>
-        <li>URL Encode</li>
-        <li>Language Codes</li>
-        <li>Country Codes</li>
-        <li>Messages</li>
-        <li>HTTP Methods</li>
-        <li class="concluido">PX to EM Converter</li>
-        <li class="concluido">Keybord Shortcuts</li>
-      </ol>
-    </details>
+    </div>
   </div>
 
+  <main class="container-index">
+    <div class="materia">
+      <h2>HTML</h2>
+      <p>HTML significa Hyper Text Markup Language. É uma linguagem de marcação usada para construir e estruturar páginas web.</p>
+      <a href="1-html/1-introducao-html.html">Conhecer</a>
+    </div>
+  </main>
+
+  <footer>
+    Desenvolvido por: Rafa Santana
+  </footer>
+
+  <script src="https://kit.fontawesome.com/9f46c28665.js" crossorigin="anonymous"></script>
+  <script src="scripts/menu-responsivo.js"></script>
 </body>
+
 </html>
